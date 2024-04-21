@@ -13,12 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('test/{firstname}/{lastname}', function ($firstname = null, $lastname = null) {
-    //return view('welcome')->with('firstname', $firstname)->with('lastname', $lastname);
-    $data = [
-        'firstname'=>$firstname,
-        'lastname'=>$lastname,
-    ];
-    echo 'bonjour '. $firstname."" .$lastname;
-    return view('welcome', $data);
+Route::get("/", function () {
+return view("welcome");
 });

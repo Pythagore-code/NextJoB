@@ -1,198 +1,371 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet">
-        <title>NextJoB</title>
-    </head>
-    <body>
-        <div class="navbar">
-            <p>{{ $firstname }} {{ $lastname }}</p>
-            <a href="index.html"><img src="" alt="Logo"></a>
-            <a href="index.html" >Accueil</a>
-            <a href="">Espace candidat</a>
-            <a href="">Espace entreprise</a>
-            <a href=""name="inscription" id="inscription">S'inscrire</a>
+  <!doctype html>
+  <html lang="fr">
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}"> 
+    <title>NextJoB</title> 
+  </head> 
+  <body> <!-- Header --> 
+    <section id="header"> 
+    <div class="header container"> 
+      <div class="nav-bar"> 
+      <div class="brand"> <a href="#home"><h1><span>N</span>ext<span>J</span>o<span>B</span></h1></a> 
+      </div> 
+      <div class="nav-list"> 
+        <div class="hamburger"> 
+        <div class="bar"></div> 
+        </div> 
+        <ul> 
+        <li><a href="#home" data-after="accueil">accueil</a></li> 
+        <li><a href="#catégories" data-after="catégories">Tableau de bord</a></li> 
+        <li><a href="#projects" data-after="publications">Publications</a></li> 
+        <li><a href="#contact" data-after="contactez-nous">contactez-nous</a></li> 
+        <li><a href="#connexion" data-after="connexion">connexion</a></li> 
+        </ul> 
+      </div> 
+      </div> 
+    </div> 
+    </section> <!-- End Header --> <!-- home Section  --> 
+    <section id="home"> 
+    <div class="home container"> 
+      <div> 
+      <h1>Bienvenue sur NextJoB<span></span></h1> 
+      
+      <h1>Trouvez l'emploi de vos reves en un clic !<span></span></h1>
+  
+      
+        <a href="#" type="button" class="cta">Recruteur</a>   
+        <br> 
+
+        </br>
+        <a href="#" type="button" class="cta">Candidat </a>   
+        <br> </br> <br> </br> 
+        
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div> 
+    </div> 3
+    </section> <!-- End home Section  --> <!-- Service Section --> 
+    <section id="catégories">  
+    <div class="catégories container"> 
+      <div class="catégorie-top"> 
+      <h1 class="section-title">Offres dispon<span>i</span>bles</h1> 
+      <p>Retrouver des offres d'emploies par catégories </p> 
+      </div> 
+      <div class="catégorie-bottom"> 
+      
+      <div class="catégorie-item"> 
+          <div class="icon"> 
+            <img src="{{asset('images/stats.png')}}" alt="logo">
+          </div> 
+          <h2>Finance </h2>
+          <p> <br> <br> </p> 
+          <div class="product">
+          <span class="nbreoffre">25</span> Offres disponibles
+          </div>
+          <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div> 
+          <div class="catégorie-item"> 
+          <div class="icon"> 
+          <img src="" alt="logo"> 
+          </div> 
+          <h2> Art et design</h2>
+          <p> <br> <br> </p> 
+          <div class="product">
+          <span class="nbreoffre">58</span>Offres disponibles
+          </div>
+          <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div> 
+        <div class="catégorie-item"> 
+          <div class="icon"> 
+          <img src="{{asset('images/enterprise.png')}}" alt="logo"> 
+          </div> 
+          <h2>Ressources humaines</h2> 
+          <p> <br> <br> </p>
+          <div class="product">
+          <span class="nbreoffre">200</span>Offres disponibles
+          </div>
+          <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div> 
+        <div class="catégorie-item"> 
+            <div class="icon"> 
+            <img src="" alt="logo"> 
+            </div> 
+            <h2>Santé et services sociaux</h2> 
+            <p> <br> <br> </p>
+            <div class="product">
+            <span class="nbreoffre">3500</span>Offres disponibles
+            </div>
+            <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div>
+        <div class="catégorie-item"> 
+            <div class="icon"> 
+            <img src="" alt=logo> 
+            </div> 
+            <h2>Marketing digital</h2> 
+            <p> <br> <br> </p>
+            <div class="product">
+              <span class="nbreoffre">593</span>Offres disponibles
+            </div>
+            <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div> 
+        <div class="catégorie-item"> 
+            <div class="icon"> 
+            <img src="" alt="logo"> 
+            </div> 
+            <h2>Vente et commerce</h2> 
+            <p> <br> <br> </p>
+            <div class="product">
+            <span class="nbreoffre">4000</span> Offres disponibles
+          </div>
+        <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div> 
+        <div class="catégorie-item"> 
+            <div class="icon"> 
+            <img src="" alt=logo> 
+            </div> 
+            <h2>Enseignement et formattion</h2> 
+            <p> <br> <br> </p>
+            <div class="product">
+            <span class="nbreoffre">5000</span> Offres disponibles
+          </div>
+        <a href="#" class="btn btn-secondary">Voir les offres</a>
+        </div> 
+      <div class="catégorie-item"> 
+          <div class="icon"> 
+          <img src="{{asset('images/coding.png')}}" alt="logo">
+          </div> 
+          <h2>Developpement Web</h2> 
+          <p> <br> <br> </p>
+          <div class="product">
+          <span class="nbreoffre">3000</span> Offres disponibles
+        </div>
+      <a href="#" class="btn btn-secondary">Voir les offres</a>
+      </div> 
+      <div class="catégorie-item"> 
+          <div class="icon"> 
+          <img src="" alt=logo> 
+          </div> 
+          <h2>Secretariat bureautique</h2> 
+          <p> <br> <br> </p>
+          <div class="product">
+          <span class="nbreoffre">500</span> Offres disponibles
+        </div>
+      <a href="#" class="btn btn-secondary">Voir les offres</a>
+      </div>
+      <div class="catégorie-item"> 
+          <div class="icon"> 
+          <img src="" alt=logo> 
+          </div> 
+          <h2>Ingenieurie et architecture </h2> 
+          <div class="product">
+          <span class="nbreoffre">720</span> Offres disponibles
+        </div>
+        <a href="#" class="btn btn-secondary">Voir les offres</a>
+      </div>  
+      <div class="catégorie-item"> 
+          <div class="icon"> 
+          <img src="" alt=logo> 
+          </div> 
+          <h2>Administration et gestion</h2> 
+          <p> <br> <br> </p>
+          <div class="product">
+          <span class="nbreoffre">290</span> Offres disponibles
+        </div>
+        <a href="#" class="btn btn-secondary">Voir les offres</a>
+      </div> 
+      <div class="catégorie-item"> 
+        <div class="icon"> 
+        <img src="" alt="logo"> 
+        </div> 
+        <h2>Designer UI/UX</h2> 
+        <p> <br> <br> </p>
+        <div class="product">
+        <span class="nbreoffre">4470</span> Offres disponibles
+      </div>
+      <a href="#" class="btn btn-secondary">Voir les offres</a>
+    </div> 
+      </div> 
+    </div> 
+    </section> <!-- End Service Section --> <!-- Projects Section --> 
+      <section id="projects"> 
+      <div class="projects container"> 
+        <div class="projects-header"> 
+        <h1 class="section-title">Offres d'emplois r<span>é</span>centes</h1> 
+      </div> 
+      <div class="all-projects"> 
+        <div class="card w-200 mb-5" style="width: 100rem;">
+
+          <div class="card-body">
+            <h5 class="card-title">Resposanble des ressources humaines</h5>
+            <p class="card-text">Temps plein<br> ville: Douala<br> Salaire:450000F</p>
+            <a href="#" class="btn btn-primary">Postuler</a>
+            <a href="#" class="btn btn-secondary">Plus d'infos</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            Il y a 45min
+          </div>
         </div>
 
-        <div class="image">
-            <img src="">
-            <div id="recruteur">
-                <a href="">Recruteur cliquer ici</a>
-            </div>
-            <div id="candidat">
-                <a href="">Candidat cliquer ici</a>
-            </div>
-                <p id="slogan">Trouver l'emploi de vos reves en un clic</p>
-                
+        <div class="card w-200 mb-5" style="width: 100rem;">
+
+          <div class="card-body">
+            <h5 class="card-title">Infimier(e) en santé mentale</h5>
+            <p class="card-text">Temps plein<br> ville: Buéa<br> Salaire:450000F</p>
+            <a href="#" class="btn btn-primary">Postuler</a>
+            <a href="#" class="btn btn-secondary">Plus d'infos</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            Il y a 15h
+          </div>
         </div>
-        <section class="select-region">
-            <header>Region</header>
-            <ul>
-                <li>Centre</li>
-                <li>Littoral</li>
-                <li>Ouest</li>
-                <li>Nord-Oues</li>
-                <li>Nord</li>
-                <li>Sud</li>
-                <li>Sud-Ouest</li>
-            </ul>
-            <details><summury>
-                <ul>
-                    <li>Est</li>
-                    <li>Extreme-Nord</li>
-                    <li>Adamaoua</li>
-                </ul>
-            </summury></details>
-        </section>
 
-        <section class="select-price">
-            <header>Salaire Mensuel</header>
-            <ul>
-                <li>20.000f-30.000f</li>
-                <li>30.000f-50.000f</li>
-                <li>50.000f-75.000f</li>
-                <li>75.000f-100.000f</li>
-                <li>100.000f-120.000f</li>
-                <li>120.000f-150.000f</li>
-                <li>150.000f-180.000f</li>
-                <li>180.000f-200.000f</li>
-                <li>2000.000f-300.000f</li>
-                <li>200.000f-400.000f</li>
-                <li>400.000f-500.000f</li>
-                <li>500.000f +</li>
-            </ul>
-        </section>
+        <div class="card w-200 mb-5" style="width: 100rem;">
 
-        <section class="date-pub">
-            <header>Date de publication</header>
-            <ul>
-                <li>A tout moment</li>
-                <li>Les dernieres 24h</li>
-                <li>Les 7 derniers jours</li>
-                <li>Les 15 derniers jours</li>
-                <li>Les 30 derniers jours</li>
-            </ul>
-        </section>
-        <section class="select-experience">
-            <header>Experience</header>
-            <ul>
-                <li>Sans experience</li>
-                <li>Minimum 1an</li>
-                <li>Minimum 2 ans</li>
-                <li>Minimum 3 ans</li>
-                <li>Minimum 3 ans</li>
-                <li>Minimum 4 ans</li>
-                <li>Minimum 5 ans</li>
-            </ul>
-        </section>
+          <div class="card-body">
+            <h5 class="card-title">Enseignant(e) en primaire</h5>
+            <p class="card-text">Temps partiel<br> ville: Loum<br> Salaire:50000F</p>
+            <a href="#" class="btn btn-primary">Postuler</a>
+            <a href="#" class="btn btn-secondary">Plus d'infos</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            Il y a 3 jours
+          </div>
+        </div>
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
+        <div class="card w-200 mb-5" style="width: 100rem;">
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
+          <div class="card-body">
+            <h5 class="card-title">Finance et comptabilité</h5>
+            <p class="card-text">Temps plein<br> ville: Loum <br> Salaire:50000F</p>
+            <a href="#" class="btn btn-primary">Postuler</a>
+            <a href="#" class="btn btn-secondary">Plus d'infos</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            Il y a 6 jours
+          </div>
+        </div>
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
+        <div class="card w-200 mb-5" style="width: 100rem;">
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
+          <div class="card-body">
+            <h5 class="card-title">Développeur web full stack Laravel</h5>
+            <p class="card-text">Temps plein<br> ville: Bafoussam <br> Salaire:250000F</p>
+            <a href="#" class="btn btn-primary">Postuler</a>
+            <a href="#" class="btn btn-secondary">Plus d'infos</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            Il y a 1 semaine
+          </div>
+        </div>
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
+        
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
+      <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link">Précédent</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Suivant</a>
+            </li>
+          </ul>
+      </nav>
 
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
-
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
-
-        <section class="offre-emploi">
-            <a href=""><img src="" alt="profil de l'entrprise"></a>
-            <a href="">
-                    <header>$poste_vacant</header>
-                    <p class="details-offre">
-                    $le_quartier
-                    $nom_de_la_structure
-                    $salaire
-                     </p>
-            </a>
-        </section>
-    </body>
-</html>
+        </div> 
+      </div> 
+      </section> <!-- End Projects Section --><!--connexion section --> 
+    <section id="connexion"> 
+    <div class="connexion container"> 
+      <div class="col-left"> 
+      </div> 
+      <div class="col-center"> 
+      <h1 class="section-title">c<span>o</span>nn<span>e</span>xion </h1> 
+      <br> 
+      <h1>Connectez-vous ici </h1> 
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+      </div> 
+    </div> <!-- end connexion section --> <!-- Contact Section --> 
+    <section id="contact"> 
+      <div class="contact container"> 
+      <div> 
+        <h1 class="section-title">c<span>o</span>nt<span>a</span>ctez-nous</h1> 
+      </div> 
+      <div class="contact-items"> 
+        <div class="contact-item"> 
+        <div class="icon"> 
+          <img src="{{asset('images/whatsapp.png')}}" alt=logo> 
+        </div> 
+        <div class="contact-info"> 
+          <h1>Telephone</h1> 
+          <h2>+237 674 354 319</h2> 
+        </div> 
+        </div> 
+        <div class="contact-item"> 
+        <div class="icon"> 
+          <img src="{{asset('images/envelope (1).png')}}" alt=logo> 
+        </div> 
+        <div class="contact-info"> 
+          <h1>Email</h1> 
+          <h2>NextJoB@gmail.com</h2>  
+        </div> 
+        </div> 
+        <div class="contact-item"> 
+        <div class="icon"> 
+          <img src="{{asset('images/location.png')}}" alt=logo> 
+        </div> 
+        <div class="contact-info"> 
+          <h1>Cameroun</h1> 
+          <h2>Douala,Ndogbong</h2> 
+        </div> 
+        </div> 
+      </div> 
+      </div> 
+    </section> <!-- End Contact Section --> <!-- Footer --> 
+    <section id="footer"> 
+      <div class="footer container"> 
+      <div class="brand"> 
+        <h1><span>N</span>e<span>x</span>tJoB</h1> 
+      </div> 
+      <h2>Social images</h2> 
+      <div class="social-icon"> 
+        <div class="social-item"> <a href="#"><img src="{{asset('images/facebook_6422199.png')}}" alt=logo></a> 
+        <div class="social-item"> <a href="#"><img src="{{asset('images/github.png')}}" alt=logo></a> 
+        </div> 
+        <div class="social-item"> <a href="#"><img src="{{asset('images/twitter.png')}}" alt=logo></a> 
+        </div> 
+        <div class="social-item"> <a href="#"><img src="{{asset('images/facebook-messenger.png')}}" alt=logo></a> 
+        </div> 
+      </div> 
+      <p>NextJoB © Copyright 2024 | All rights reserved</p> 
+      </div> 
+    </section> <!-- End Footer --> 
+    <script src="{{asset('js/script.js')}}"></script> 
+    
+    </section> 
+  </body>
+  </html>
