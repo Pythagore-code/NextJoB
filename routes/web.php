@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get("/", function () {
 return view("welcome");
 });
+
+Route::get('inscriptionCandidat', function () {
+    return view('inscriptionCandidat'); 
+  })->name('inscription.candidat');

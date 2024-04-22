@@ -40,7 +40,7 @@
         <br> 
 
         </br>
-        <a href="#" type="button" class="cta">Candidat </a>   
+        <a href="{{ route('inscription.candidat')}}" type="button" class="cta">Candidat </a>   
         <br> </br> <br> </br> 
         
         <div class="container-fluid">
@@ -65,7 +65,7 @@
             <img src="{{asset('images/stats.png')}}" alt="logo">
           </div> 
           <h2>Finance </h2>
-          <p> <br> <br> </p> 
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">25</span> Offres disponibles
           </div>
@@ -73,10 +73,10 @@
         </div> 
           <div class="catégorie-item"> 
           <div class="icon"> 
-          <img src="" alt="logo"> 
+          <img src="{{asset('images/paint-board-and-brush.png')}}" alt="logo"> 
           </div> 
           <h2> Art et design</h2>
-          <p> <br> <br> </p> 
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">58</span>Offres disponibles
           </div>
@@ -87,7 +87,7 @@
           <img src="{{asset('images/enterprise.png')}}" alt="logo"> 
           </div> 
           <h2>Ressources humaines</h2> 
-          <p> <br> <br> </p>
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">200</span>Offres disponibles
           </div>
@@ -95,10 +95,10 @@
         </div> 
         <div class="catégorie-item"> 
             <div class="icon"> 
-            <img src="" alt="logo"> 
+            <img src="{{asset('images/social-worker.png')}}" alt="logo"> 
             </div> 
             <h2>Santé et services sociaux</h2> 
-            <p> <br> <br> </p>
+            <br> <br>
             <div class="product">
             <span class="nbreoffre">3500</span>Offres disponibles
             </div>
@@ -106,10 +106,10 @@
         </div>
         <div class="catégorie-item"> 
             <div class="icon"> 
-            <img src="" alt=logo> 
+            <img src="{{asset('images/social-media-marketing.png')}}" alt=logo> 
             </div> 
             <h2>Marketing digital</h2> 
-            <p> <br> <br> </p>
+            <br> <br>
             <div class="product">
               <span class="nbreoffre">593</span>Offres disponibles
             </div>
@@ -117,10 +117,10 @@
         </div> 
         <div class="catégorie-item"> 
             <div class="icon"> 
-            <img src="" alt="logo"> 
+            <img src="{{asset('images/backup.png')}}" alt="logo"> 
             </div> 
-            <h2>Vente et commerce</h2> 
-            <p> <br> <br> </p>
+            <h2>Electricité générale</h2> 
+            <br> <br>
             <div class="product">
             <span class="nbreoffre">4000</span> Offres disponibles
           </div>
@@ -128,10 +128,10 @@
         </div> 
         <div class="catégorie-item"> 
             <div class="icon"> 
-            <img src="" alt=logo> 
+            <img src="{{asset('images/classroom.png')}}" alt=logo> 
             </div> 
             <h2>Enseignement et formattion</h2> 
-            <p> <br> <br> </p>
+            <br> <br>
             <div class="product">
             <span class="nbreoffre">5000</span> Offres disponibles
           </div>
@@ -142,7 +142,7 @@
           <img src="{{asset('images/coding.png')}}" alt="logo">
           </div> 
           <h2>Developpement Web</h2> 
-          <p> <br> <br> </p>
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">3000</span> Offres disponibles
         </div>
@@ -150,10 +150,10 @@
       </div> 
       <div class="catégorie-item"> 
           <div class="icon"> 
-          <img src="" alt=logo> 
+          <img src="{{asset('images/internship.png')}}" alt=logo> 
           </div> 
-          <h2>Secretariat bureautique</h2> 
-          <p> <br> <br> </p>
+          <h2>Stage academique et professionelle</h2> 
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">500</span> Offres disponibles
         </div>
@@ -161,9 +161,10 @@
       </div>
       <div class="catégorie-item"> 
           <div class="icon"> 
-          <img src="" alt=logo> 
+          <img src="{{asset('images/civil-engineering.png')}}" alt=logo> 
           </div> 
           <h2>Ingenieurie et architecture </h2> 
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">720</span> Offres disponibles
         </div>
@@ -171,10 +172,10 @@
       </div>  
       <div class="catégorie-item"> 
           <div class="icon"> 
-          <img src="" alt=logo> 
+          <img src="{{asset('images/makeup.png')}}" alt=logo> 
           </div> 
-          <h2>Administration et gestion</h2> 
-          <p> <br> <br> </p>
+          <h2>Make-up artist</h2> 
+          <br> <br>
           <div class="product">
           <span class="nbreoffre">290</span> Offres disponibles
         </div>
@@ -182,10 +183,10 @@
       </div> 
       <div class="catégorie-item"> 
         <div class="icon"> 
-        <img src="" alt="logo"> 
+        <img src="{{asset('images/ux-design.png')}}" alt="logo"> 
         </div> 
         <h2>Designer UI/UX</h2> 
-        <p> <br> <br> </p>
+        <br> <br>
         <div class="product">
         <span class="nbreoffre">4470</span> Offres disponibles
       </div>
