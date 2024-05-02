@@ -36,11 +36,11 @@
       <h1>Trouvez l'emploi de vos reves en un clic !<span></span></h1>
   
       
-        <a href="#" type="button" class="cta">Recruteur</a>   
+        <a href="{{ route('register')}}" type="button" class="cta">Recruteur</a>   
         <br> 
 
         </br>
-        <a href="{{ route('inscription.candidat')}}" type="button" class="cta">Candidat </a>   
+        <a href="{{ route('register')}}" type="button" class="cta">Candidat </a>   
         <br> </br> <br> </br> 
         
         <div class="container-fluid">

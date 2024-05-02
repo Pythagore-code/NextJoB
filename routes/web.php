@@ -20,3 +20,10 @@ return view("welcome");
 Route::get('inscriptionCandidat', function () {
     return view('inscriptionCandidat'); 
   })->name('inscription.candidat');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
